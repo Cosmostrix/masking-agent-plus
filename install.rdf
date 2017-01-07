@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>maskingagentplus@lunakit.org</em:id>
+    <em:version>1.0.0-signed.1-signed</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>false</em:unpack>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97385}</em:id>
+        <em:minVersion>50.0</em:minVersion>
+        <em:maxVersion>90.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>Masking Agent+</em:name>
+    <em:description>Masking Agent+ protects you from showing platform information (OS and CPU) on the internet.</em:description>
+    <em:creator>lunakit.org</em:creator>
+    <em:homepageURL>https://github.com/Cosmostrix/masking-agent-plus/</em:homepageURL>
+    <em:optionsType>2</em:optionsType>
+    
+  </Description>
+</RDF>

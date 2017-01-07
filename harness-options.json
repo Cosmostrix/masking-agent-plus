@@ -1,0 +1,95 @@
+{
+ "abort_on_missing": false, 
+ "check_memory": false, 
+ "enable_e10s": false, 
+ "is-sdk-bundled": false, 
+ "jetpackID": "maskingagentplus@lunakit.org", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "maskingagentplus/main", 
+ "manifest": {
+  "maskingagentplus/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "eb285ee935da93986f0bd5431002f49a79d0f83bc5ba4f5d6ec2c3fce0eba602", 
+   "moduleName": "main", 
+   "packageName": "maskingagentplus", 
+   "requirements": {
+    "chrome": "chrome", 
+    "sdk/preferences/service": "sdk/preferences/service", 
+    "sdk/simple-prefs": "sdk/simple-prefs", 
+    "sdk/ui/button/action": "sdk/ui/button/action"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "maskingagentplus": {
+   "author": "basa",
+   "description": "Masking Agent+ protects you from showing platform information (OS and CPU) on the internet.",
+   "homepage": "https://github.com/Cosmostrix/masking-agent-plus/",
+   "license": "BSD-3-Clause",
+   "main": "main",
+   "name": "maskingagentplus",
+   "version": "1.0.0"
+  }
+ }, 
+ "name": "maskingagentplus", 
+ "parseable": false, 
+ "preferences": [
+  {
+   "name": "active", 
+   "options": [
+    {
+     "label": "Do nothing", 
+     "value": false
+    },
+    {
+     "label": "Modify user agent", 
+     "value": true
+    }
+   ], 
+   "title": "Want to change platform info?", 
+   "type": "menulist", 
+   "value": "custom"
+  }, 
+  {
+   "hidden": "false", 
+   "name": "os", 
+   "title": "OS", 
+   "type": "string", 
+   "value": "Macintosh"
+  }, 
+  {
+   "hidden": "false", 
+   "name": "platform", 
+   "title": "Platform", 
+   "type": "string", 
+   "value": "MacIntel"
+  }, 
+  {
+   "hidden": "false", 
+   "name": "oscpu", 
+   "title": "OS and CPU", 
+   "type": "string", 
+   "value": "Intel Mac OS X 10.12"
+  }
+ ], 
+ "preferencesBranch": "maskingagentplus@lunakit.org", 
+ "sdkVersion": "1.17", 
+ "staticArgs": {}, 
+ "verbose": false
+}
